@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "student",
+		"_postman_id": "cac75cee-5313-f586-2fc1-ec37102a74ee",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "studentconsumer",
+			"request": {
+				"url": "http://localhost:8080/student/consumer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"S Kumar\",\n\t\"gender\":\"MALE\",\n\t\"subject\":\"Computers\",\n\t\"marks\":93\n}"
+				},
+				"description": "http://localhost:8080/student/consumer"
+			},
+			"response": []
+		},
+		{
+			"name": "student",
+			"request": {
+				"url": "http://localhost:8080/student/send",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"S Anil\",\n\t\"gender\":\"MALE\",\n\t\"subject\":\"Computers\",\n\t\"marks\":98\n}"
+				},
+				"description": "http://localhost:8080/student/send"
+			},
+			"response": []
+		}
+	]
+}
